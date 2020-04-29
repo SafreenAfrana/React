@@ -18,6 +18,22 @@ import Inline from './components/Inline'
 import './components/appStyles.css'
 import   './components/appStyles1.css'
 import Form from './components/Form'
+import LifecycleA from './components/LifecycleA'
+import LifecycleC from './components/LifecycleC';
+import FragmentDemo from './components/FragmentDemo'
+import Table from './components/Table';
+import ParentComp from './components/ParentComp'
+import ParentMemo from './components/ParentMemo'
+import RefsDemo from './components/RefsDemo';
+import FocusInput from './components/FocusInput'
+import FRParentInput from './components/FRParentInput';
+import PortalDemo from './components/PortalDemo'
+import Name from './components/Name';
+import ErrorBoundary from './components/ErrorBoundary'
+import ClickCounter from './components/ClickCounter'
+import HoverCounter from './components/HoverCounter'
+import ComponentC from './components/Context/ComponentC'
+import {UserProvider} from './components/Context/UserContext'
 function App() {
   return (
     <div className="App">
@@ -39,7 +55,28 @@ function App() {
       {/*<Inline />*/}
       {/*<h1 className='error'>This is an error statement</h1>*/}
       {/*<h1 className='success'>Success</h1>*/}
-      <Form />
+      {/*<Form />*/}
+      {/*<LifecycleA />*/}
+    
+      {/*<LifecycleC />*/}
+      {/*<FragmentDemo />*/}
+      {/*<Table />*/}
+      {/*<ParentComp />*/}
+      {/*<ParentMemo />*/}
+      {/*<RefsDemo />*/}
+      {/*<FocusInput />*/}
+      {/*<FRParentInput />*/}
+      {/*<PortalDemo />*/}
+      {/*<ErrorBoundary>
+      <Name  myName='Safreen' /></ErrorBoundary>
+      <ErrorBoundary>
+      <Name  myName='Afrana' />
+      </ErrorBoundary>*/}
+      {/*<ClickCounter />
+      <HoverCounter />*/}
+      <UserProvider value="safreen">
+      <ComponentC />
+      </UserProvider>
       {/*<header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
